@@ -15,6 +15,7 @@ public class NematodeVisualiser extends PApplet
 	{		
 		if (keyCode == LEFT)
 		{
+
 		}		
 	}
 
@@ -53,8 +54,9 @@ public class NematodeVisualiser extends PApplet
     }
 
 
-	public void draw()
+	public void draw(ArrayList <Nematode> nematodes)
 	{	
-
+		stroke(37, 238, 142);
+		
 	}
 }
