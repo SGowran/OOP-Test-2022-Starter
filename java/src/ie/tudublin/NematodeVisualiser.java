@@ -11,12 +11,21 @@ public class NematodeVisualiser extends PApplet
 	ArrayList <Nematode> nematodes = new ArrayList<Nematode>();
     Table table;
 
-	public void keyPressed()
-	{		
+	public void keyPressed(ArrayList <Nematode> nematodes)
+	{	
+		ArrayList <tode> tode = new ArrayList<tode>();
+		tode = nematodes;	
+		int i;
 		if (keyCode == LEFT)
 		{
-
-		}		
+			tode[i] = tode[i+1]; 
+			draw(tode);	
+		}
+		else if (keyCode == RIGHT)
+		{
+			tode[i] = tode[i-1]; 
+			draw(tode);
+		}
 	}
 
 
@@ -54,9 +63,24 @@ public class NematodeVisualiser extends PApplet
     }
 
 
-	public void draw(ArrayList <Nematode> nematodes)
+	public void draw(tode)
 	{	
-		stroke(37, 238, 142);
-		
+		String name, gender;
+		int length, limbs, eyes, i;
+
+		//name
+		System.out.println(name);
+
+		//length
+		for(i = 0; i < length + 1; i++)
+		{
+			circle(224, 184, 220);
+		}
+
+		//limbs
+		if (limbs != 0)
+		{
+	
+		}
 	}
 }
