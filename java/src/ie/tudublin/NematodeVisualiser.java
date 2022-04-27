@@ -68,19 +68,57 @@ public class NematodeVisualiser extends PApplet
 		String name, gender;
 		int length, limbs, eyes, i;
 
+		int x1 = 224, y1 = 184, x2, y2;
+
 		//name
 		System.out.println(name);
 
 		//length
 		for(i = 0; i < length + 1; i++)
 		{
-			circle(224, 184, 220);
+			circle(x1, y1, 220);
+			x1 = x1 + 220;
+			y1 = y1 + 220;
 		}
 
 		//limbs
 		if (limbs != 0)
 		{
-	
+			line(x1, y1, x2, y2);
+		}
+
+		//gender
+		if (gender = m)
+		{
+			line();
+		}
+		else if (gender = f)
+		{
+			x1 = x1 - 220;
+			y1 = y1 - 220;
+			circle(x1, y1, 110);
+		}
+		else if (gender = h)
+		{
+			//male
+			line();
+
+			//female
+			x1 = x1 - 220;
+			y1 = y1 - 220;
+			circle(x1, y1, 110);
+		}
+
+		int x1 = 224, y1 = 184, x2, y2;
+
+		//eyes
+		if (lines = 1)
+		{
+			size(100, 100);
+			line();
+			size(100, 100);
+			line();
 		}
 	}
+
 }
